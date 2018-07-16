@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task-2</title>
+</head>
+<body>
+    
+    <div ng-controller="myCtr">
+
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>title</th>
+        </tr>
+        <tr  ng-repeat = "post in posts">
+            <td>{{post.id}}</td>
+            <td>{{post.title}}</td>
+        </tr>
+    </table>
+
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
